@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gourmet Table - Restaurant Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f1de;
+        }
+        
+        header {
+            background-color: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            font-style: italic;
+            color: #ecf0f1;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .menu-section {
+            background-color: #fff;
+            margin: 2rem 0;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .menu-section h2 {
+            color: #2c3e50;
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        
+        .menu-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dotted #bdc3c7;
+        }
+        
+        .menu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        
+        .item-name {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        
+        .item-price {
+            font-size: 1.2rem;
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .item-description {
+            color: #7f8c8d;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        
+        footer {
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            text-align: center;
+            padding: 2rem 1rem;
+            margin-top: 3rem;
+        }
+        
+        footer h3 {
+            margin-bottom: 1rem;
+            color: #fff;
+        }
+        
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+        }
+        
+        .contact-item {
+            font-size: 0.95rem;
+        }
+        
+        .contact-item strong {
+            color: #ecf0f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🍽️ The Gourmet Table</h1>
+        <p>"Experience Fine Dining at Its Best"</p>
+    </header>
+    
+    <main>
+        <!-- Starters Section -->
+        <section class="menu-section">
+            <h2>🥗 Starters</h2>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Crispy Bruschetta</span>
+                    <span class="item-price">$8.99</span>
+                </div>
+                <p class="item-description">Toasted bread slices topped with fresh tomatoes, garlic, basil, and olive oil</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Shrimp Cocktail</span>
+                    <span class="item-price">$12.99</span>
+                </div>
+                <p class="item-description">Chilled jumbo shrimp served with cocktail sauce and fresh lemon</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Caprese Salad</span>
+                    <span class="item-price">$10.50</span>
+                </div>
+                <p class="item-description">Fresh mozzarella, tomatoes, basil, and balsamic vinegar</p>
+            </div>
+        </section>
+        
+        <!-- Main Course Section -->
+        <section class="menu-section">
+            <h2>🍖 Main Courses</h2>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Grilled Salmon Fillet</span>
+                    <span class="item-price">$24.99</span>
+                </div>
+                <p class="item-description">Atlantic salmon grilled to perfection, served with seasonal vegetables and lemon butter sauce</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Ribeye Steak</span>
+                    <span class="item-price">$28.99</span>
+                </div>
+                <p class="item-description">Premium 12oz ribeye, cooked to your preference, served with mashed potatoes and asparagus</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Chicken Parmesan</span>
+                    <span class="item-price">$18.50</span>
+                </div>
+                <p class="item-description">Breaded chicken breast topped with marinara sauce and melted mozzarella</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Vegetarian Pasta Primavera</span>
+                    <span class="item-price">$16.99</span>
+                </div>
+                <p class="item-description">Fresh pasta with seasonal vegetables in a light garlic and white wine sauce</p>
+            </div>
+        </section>
+        
+        <!-- Desserts Section -->
+        <section class="menu-section">
+            <h2>🍰 Desserts</h2>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Tiramisu</span>
+                    <span class="item-price">$7.99</span>
+                </div>
+                <p class="item-description">Classic Italian dessert with layers of espresso-soaked sponge cake and mascarpone cream</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Chocolate Lava Cake</span>
+                    <span class="item-price">$8.50</span>
+                </div>
+                <p class="item-description">Warm chocolate cake with a molten center, served with vanilla ice cream</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Cheesecake</span>
+                    <span class="item-price">$7.50</span>
+                </div>
+                <p class="item-description">New York-style cheesecake with fresh strawberry topping</p>
+            </div>
+        </section>
+        
+        <!-- Beverages Section -->
+        <section class="menu-section">
+            <h2>🥤 Beverages</h2>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Fresh Orange Juice</span>
+                    <span class="item-price">$4.99</span>
+                </div>
+                <p class="item-description">Freshly squeezed orange juice served cold</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Soft Drink</span>
+                    <span class="item-price">$2.99</span>
+                </div>
+                <p class="item-description">Coca-Cola, Sprite, Fanta, or ginger ale</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">Iced Tea</span>
+                    <span class="item-price">$3.50</span>
+                </div>
+                <p class="item-description">Homemade iced tea with fresh lemon</p>
+            </div>
+            
+            <div class="menu-item">
+                <div class="item-header">
+                    <span class="item-name">House Wine</span>
+                    <span class="item-price">$6.99</span>
+                </div>
+                <p class="item-description">Red or white wine by the glass</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <h3>Contact Us</h3>
+        <div class="contact-info">
+            <div class="contact-item">
+                <strong>Address:</strong> 123 Fine Dining Street, Culinary City, CC 12345
+            </div>
+            <div class="contact-item">
+                <strong>Phone:</strong> +1 (555) 123-4567
+            </div>
+            <div class="contact-item">
+                <strong>Email:</strong> info@gourmettable.com
+            </div>
+        </div>
+        <p>&copy; 2026 The Gourmet Table. All rights reserved.</p>
+    </footer>
+</body>
+</html>
